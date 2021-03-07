@@ -3,8 +3,8 @@ public class Checkerboard {
         int n = Integer.parseInt(args[0]);
         StdDraw.setScale(0, n);
         boolean blue = true;
-        for (double x = 0; x < n; x++) {
-            for (double y = 0; y < n; y++) {
+        for (int x = 0; x < n; x++) {
+            for (int y = 0; y < n; y++) {
                 if (blue) {
                     StdDraw.setPenColor(StdDraw.BLUE);
                     blue = false;

@@ -8,16 +8,16 @@ public class ShannonEntropy {
             if (x <= m) a[x - 1] += 1;
             count++;
         }
-        double H = 0.0;
+        double h = 0.0;
         for (int i = 0; i < m; i++) {
             if (a[i] != 0) {
                 double p = (double) a[i] / count;
-                H -= p * (Math.log(p) / Math.log(2.0));
+                h -= p * (Math.log(p) / Math.log(2.0));
             }
 
         }
-        System.out.format("%.4f%n", H);
-//        StdOut.println("%.4f%n", H);
+
+        StdOut.printf("%.4f\n", h);
 
 
     }
